@@ -104,7 +104,7 @@ export default function Search({ setLocation }) {
             <Accordion.Collapse eventKey="0">
               <Card.Body>
                 {history.map((cityData, index) => (
-                  <p key={String(index)} onClick={() => setLocation(cityData)}>
+                  <p key={String(index)} style={{ cursor: "pointer" }} onClick={() => setLocation(cityData)}>
                     {`${cityData.city}, ${cityData.state_name}`}
                   </p>
                 ))}
