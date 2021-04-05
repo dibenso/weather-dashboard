@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(180deg, rgba(128,128,254,0.9191876579733456) 0%, rgba(0,212,255,0.1264705711386117) 100%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(180deg, rgba(128,128,254,0.9191876579733456) 0%, rgba(0,212,255,0.1264705711386117) 100%, rgba(255,255,255,1) 100%) no-repeat center center fixed;
+  background-size: cover;
   font-family: 'Fredoka One', cursive;
 }
 
