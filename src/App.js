@@ -30,7 +30,7 @@ function App() {
   return (
     <>
       <Container fluid style={{ textAlign: "center" }}>
-        <h1 className="display-3">Weather Dashboard</h1>
+        <h1 className="display-4">Weather Dashboard</h1>
         {error && error}
         <Search setLocation={setLocation} />
         {fetching && (
