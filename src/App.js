@@ -16,7 +16,7 @@ function App() {
         setFetching(true);
 
         const { lat, lng } = location;
-        const response = await fetch(`http://localhost:8080/api/weather/${lat}/${lng}`);
+        const response = await fetch(`/api/weather/${lat}/${lng}`);
 
         setFetching(false);
         setWeatherData(await response.json());

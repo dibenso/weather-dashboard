@@ -11,7 +11,7 @@ export default function Search({ setLocation }) {
   const [history, setHistory] = useState(JSON.parse(localStorage.getItem("history")));
   const fetchAutoComplete = value => {
     if (value) {
-      fetch(`http://localhost:8080/api/autocomplete/${value}`)
+      fetch(`/api/autocomplete/${value}`)
         .then(response => response.json())
         .then(cityData => {
           if (cityData) setAutoCompleteList(cityData);
